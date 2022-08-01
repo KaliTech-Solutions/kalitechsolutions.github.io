@@ -1,0 +1,194 @@
+/*--Body reset--*/
+body{
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 500 !important;
+}
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    color: #1ab6d2;
+}
+img {
+    width: 100%;
+}
+
+/*--Navigation bar--*/
+
+.nav-brand img {
+    height: 5rem;
+   
+}
+.navbar {
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 12px 20px rgba(0, 0, 1, 1);
+}
+
+.nav-item {
+    padding: .5rem;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #fff;
+}
+.nav-link{
+    color: #fff ;
+}
+.navbar-nav > .active > a {
+    color: aqua;
+    background-color: none;    
+  }
+  .nav-item > a:hover {
+    color: rgb(4, 179, 182);
+  }
+
+   /*--hero section--*/
+
+   section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+   }
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(32, 206, 226, 0.2), rgba(13, 110, 253, 0.2) );
+    z-index: -1;
+   }
+.bg-cover{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero-section{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    padding: 14px 22px;
+    transition: all 0.3s ease;
+}
+.btn-main{
+    background: linear-gradient(to left,#20cee2, #01337d);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+.btn:hover{
+    color: #40229f;
+    transform: translateY(-7px);
+}
+
+/*--Our services section--*/
+
+.section-intro{
+    margin-bottom: 40px;
+}
+.divider{
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(to left,#20cee2, #01337d);
+    margin: 20px auto;
+}
+.service .service-img{
+    position: relative;
+}
+.service .service-img .icon {
+    color: #fff;
+    height: 90px;
+    width: 90px;
+    background: linear-gradient(to left,#20cee2, #01337d);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service .service-img .icon i {
+    font-size: 36px;
+}
+
+/*--About us section--*/
+.about-section{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-position: bottom; 
+}
+
+/*--Features section--*/
+.feature i{
+   background: -webkit-linear-gradient(#20cee2, #01337d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 54px;
+}
+
+/*--Testimonial section--*/
+.review {
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1) ;
+}
+.review .person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding-bottom: 18px;
+}
+.review .person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+.review .stars {
+    color: orange;
+}
+
+/*--Contact section--*/
+form .form-control{
+    border-radius: 0;
+    background: transparent;
+    color: #000000;
+    border-color: rgba(255, 255, 255, 0.71);
+}
+form .form-control:focus {
+    color: #000000;
+    background: transparent;
+    border-color: #000000;
+}
+form input .form-control {
+    height: 54px;
+}
+form .form-control::placeholder {
+    color: #fff;
+}
+
+/*--Footer section--*/
+footer {
+    background: linear-gradient(to right,#c3e2e6, #becfe7);
+    color: #000000;
+}
+footer a {
+    color: #000000;
+}
+ footer i {
+    font-size: 40px;  
+ }
+ footer i:hover {
+    transform: translateY(-7px);
+ }
